@@ -5,6 +5,11 @@
   font-family: sans-serif;
 }
 
+@font-face {
+  font-family: cubano;
+  src: url("../fonts/cubano.ttf");
+}
+
 a {
   display: block;
 }
@@ -204,9 +209,27 @@ a {
     .fail {
       display: block;
     }
+    .share {
+      display: none;
+    }
   }
 }
 
 .hide {
   display: none;
+}
+
+.btn {
+  font-family: cubano, sans-serif;
+  color: #fff;
+  background-color: #ff0042;
+  border: none;
+  font-size: 28px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
