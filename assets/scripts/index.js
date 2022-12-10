@@ -51,6 +51,7 @@ function startGame() {
   gameMain.classList.remove("won");
   startAnim();
   popup.classList.add("hide");
+  overlay.classList.add("hide");
 }
 
 function loseGame() {
@@ -61,6 +62,7 @@ function loseGame() {
   popup.classList.remove("won");
   popupTitle.innerHTML = "Try Again!";
   popup.classList.remove("hide");
+  overlay.classList.remove("hide");
 }
 
 function winGame() {
@@ -71,6 +73,7 @@ function winGame() {
   popup.classList.remove("lost");
   popupTitle.innerHTML = "Congratulations";
   popup.classList.remove("hide");
+  overlay.classList.remove("hide");
 }
 
 startGame();
@@ -89,5 +92,12 @@ cobaLagai.addEventListener("click", function () {
 
 closePopup.addEventListener("click", function () {
   popup.classList.add("hide");
+  overlay.classList.add("hide");
+  overlay.classList.add("hide");
+});
+
+overlay.addEventListener("click", function () {
+  popup.classList.add("hide");
+  overlay.classList.add("hide");
   overlay.classList.add("hide");
 });
